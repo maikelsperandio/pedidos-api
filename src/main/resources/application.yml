@@ -1,0 +1,14 @@
+
+spring:
+  jackson:
+    date-format: dd/MM/yyyy HH:mm:ss
+    serialization:
+      write-dates-as-timestamps: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/vendas?autoReconnect=true&serverTimezone=America/Sao_Paulo
+    username: root
+    password: 123456
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
